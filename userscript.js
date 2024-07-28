@@ -15,6 +15,8 @@
     'use strict';
 function unshitify(){
 let newStyles = document.createElement('style');
+    //How-To: Simply comment out features you want or dont want with the // at the beginning of the line. Commenting them out turns them off.
+
     //Removes social counter from posts (likes, reactions, etc), this will also hide the comment section so you have to click comment if you want to make a comment or view comments
     newStyles.innerText += ".social-details-social-counts__item, .social-details-social-counts__item, .social-details-reactors-facepile { display: none !important}"
 
@@ -41,6 +43,15 @@ let newStyles = document.createElement('style');
 
     //Removes follow button
     newStyles.innerText += ".follow { display: none !important}"
+
+    //Removes anayltics from profile if you have creator mode turned on
+    newStyles.innerText += "section:has(> div#insights) { display: none !important}"
+
+    //Removes your follower and connection count when viewing your page
+    newStyles.innerText += ".pvs-header__optional-link a[href='https://www.linkedin.com/feed/followers/'], a[href='/mynetwork/network-manager/people-follow/followers/'], a[href='/mynetwork/invite-connect/connections/'] { display: none !important}"
+
+    //Removes custom buttons from peoples pages
+    newStyles.innerText += ".update-components-actor__sub-description-button { display: none !important}"
 
 document.head.appendChild(newStyles);
 }
