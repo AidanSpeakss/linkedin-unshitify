@@ -15,12 +15,12 @@
     'use strict';
 function unshitify(){
 let newStyles = document.createElement('style');
-    //How-To: Simply comment out features you want or dont want with the // at the beginning of the line. Commenting them out turns them off. Removing the // turns them back on.
+    //How-To: Simply comment out/in features you want or don't want with the // at the beginning of the line. Adding the // turns them off. Removing the // turns them back on.
 
-    //Removes social counter from posts (likes, reactions, comment amount, etc), this also means you will have to click the comment button if you want to make a comment or view comments on posts where the comments aren't already visible
+    //Removes social counters from posts (likes, reactions, comment amount, etc), this also means you will have to click the comment button if you want to make a comment or view comments on posts where the comments aren't already visible
     newStyles.innerText += ".social-details-social-counts__item, .social-details-social-counts__item, .social-details-reactors-facepile, .social-details-reactors-facepile { display: none !important}"
 
-    //Removes social counter from comments (likes, reactions, etc) while keep button to reply to comments
+    //Removes social counters from comments (likes, reactions, etc) while keeping the button to reply to comments
     newStyles.innerText += ".comments-comment-social-bar__reactions-count--cr, .comments-comment-social-bar__replies-count--cr { display: none !important}"
 
     //Removes Feed Entirely - Can Break Things:
@@ -35,7 +35,7 @@ let newStyles = document.createElement('style');
     //Removes sidebar with news and games
     newStyles.innerText += "#feed-news-module { display: none !important}"
 
-    //Removes ai comment suggestions
+    //Removes AI comment suggestions
     newStyles.innerText += ".feed-shared-coach-prompt__multi-suggestion-cta { display: none !important}"
 
     //Removes liked and commented on posts from feed (only showing POSTS from people you follow) - cant get to work right, feel free to improve with a fork and merge it
@@ -44,10 +44,10 @@ let newStyles = document.createElement('style');
     //Removes follow button
     newStyles.innerText += ".follow { display: none !important}"
 
-    //Removes anayltics from profile if you have creator mode turned on
+    //Removes analytics from your profile if you have creator mode turned on
     newStyles.innerText += "section:has(> div#insights) { display: none !important}"
 
-    //Removes anayltics from your posts if you have creator mode turned on
+    //Removes analytics from your posts if you have creator mode turned on
     newStyles.innerText += ".content-analytics-entry-point { display: none !important}"
 
     //Removes your follower and connection count when viewing your page
@@ -56,7 +56,7 @@ let newStyles = document.createElement('style');
     //Removes custom buttons from peoples pages
     newStyles.innerText += ".update-components-actor__sub-description-button { display: none !important}"
 
-    //Remove "premium features" from sidebar, they do this to ensure you see the value in your $40/month subscription constantly so you are less likely to cancel by the way
+    //Remove "premium features" from the sidebar
     newStyles.innerText += ".feed-identity-module__anchored-widget--premium-access { display: none !important}"
 
 document.head.appendChild(newStyles);
