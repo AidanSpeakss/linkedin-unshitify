@@ -26,7 +26,7 @@ let newStyles = document.createElement('style');
     //Removes Feed Entirely - Can Break Things:
     //newStyles.innerText += ".feed-new-update-pill__new-update-button, .feed-right-rail, .feed-shared-update-v2, .nav-item__badge--doughnut, .feed-shared-news-module, .feed-follows-module { display: none !important; }"
 
-    //Removed Feed Entirely - Does Not Break As Many Things:
+    //Removes Feed Entirely - Does Not Break As Many Things:
     //newStyles.innerText += ".feed-shared-update-v2 { display: none !important; }"
 
     //Removes profile view stats
