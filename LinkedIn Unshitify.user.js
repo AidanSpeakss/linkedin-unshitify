@@ -59,6 +59,19 @@ let newStyles = document.createElement('style');
     //Remove "premium features" from the sidebar
     newStyles.innerText += ".feed-identity-module__anchored-widget--premium-access { display: none !important}"
 
+    //Removes analytics from whos viewed your profile page while still allowing you to see who's viewed it
+    newStyles.innerText += ".member-analytics-addon-analytic-view__filters, .member-analytics-addon-drawer { display: none !important}"
+
+    //Removes whos viewed your profile page entirely
+    //newStyles.innerText += ".member-analytics-addon-analytic-view { display: none !important}"
+
+    //Removes premium promos from whos viewed your profile page
+    newStyles.innerText += ".member-analytics-addon-promo-item { display: none !important}"
+
+    //Removes premium icon from everywhere on the site
+    newStyles.innerText += "svg[aria-label='PREMIUM'] { display: none !important}"
+
+
 document.head.appendChild(newStyles);
 }
 
