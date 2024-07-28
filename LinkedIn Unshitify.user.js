@@ -18,7 +18,7 @@ let newStyles = document.createElement('style');
     //How-To: Simply comment out features you want or dont want with the // at the beginning of the line. Commenting them out turns them off. Removing the // turns them back on.
 
     //Removes social counter from posts (likes, reactions, etc), this will also hide the comment section so you have to click comment if you want to make a comment or view comments
-    newStyles.innerText += ".social-details-social-counts__item, .social-details-social-counts__item, .social-details-reactors-facepile { display: none !important}"
+    newStyles.innerText += ".social-details-social-counts__item, .social-details-social-counts__item, .social-details-reactors-facepile, .social-details-reactors-facepile { display: none !important}"
 
     //Removes social counter from comments (likes, reactions, etc) while keep button to reply to comments
     newStyles.innerText += ".comments-comment-social-bar__reactions-count--cr, .comments-comment-social-bar__replies-count--cr { display: none !important}"
@@ -44,8 +44,11 @@ let newStyles = document.createElement('style');
     //Removes follow button
     newStyles.innerText += ".follow { display: none !important}"
 
-    //Removes anayltics from profile if you have creator mode turned on
+    //Removes analytics from profile if you have creator mode turned on
     newStyles.innerText += "section:has(> div#insights) { display: none !important}"
+
+    //Removes analytics from your posts if you have creator mode turned on
+    newStyles.innerText += ".content-analytics-entry-point { display: none !important}"
 
     //Removes your follower and connection count when viewing your page
     newStyles.innerText += ".pvs-header__optional-link a[href='https://www.linkedin.com/feed/followers/'], a[href='/mynetwork/network-manager/people-follow/followers/'], a[href='/mynetwork/invite-connect/connections/'] { display: none !important}"
