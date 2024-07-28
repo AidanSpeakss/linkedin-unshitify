@@ -44,10 +44,10 @@ let newStyles = document.createElement('style');
     //Removes follow button
     newStyles.innerText += ".follow { display: none !important}"
 
-    //Removes analytics from profile if you have creator mode turned on
+    //Removes anayltics from profile if you have creator mode turned on
     newStyles.innerText += "section:has(> div#insights) { display: none !important}"
 
-    //Removes analytics from your posts if you have creator mode turned on
+    //Removes anayltics from your posts if you have creator mode turned on
     newStyles.innerText += ".content-analytics-entry-point { display: none !important}"
 
     //Removes your follower and connection count when viewing your page
@@ -55,6 +55,9 @@ let newStyles = document.createElement('style');
 
     //Removes custom buttons from peoples pages
     newStyles.innerText += ".update-components-actor__sub-description-button { display: none !important}"
+
+    //Remove "premium features" from sidebar, they do this to ensure you see the value in your $40/month subscription constantly so you are less likely to cancel by the way
+    newStyles.innerText += ".feed-identity-module__anchored-widget--premium-access { display: none !important}"
 
 document.head.appendChild(newStyles);
 }
