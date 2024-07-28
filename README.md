@@ -7,5 +7,5 @@ Simple and customizable user script to unshitify LinkedIn.
 
 Star if you find it useful, but I don't really care, just want to share the script, I use it for myself every day.
 
-Can be installed using Tampermonkey on all modern desktop browsers: https://www.tampermonkey.net/
+Can be installed using Tampermonkey on all modern desktop browsers: https://www.tampermonkey.net/   
 Not recommended for people without a little bit of computer literacy, this can break things.
