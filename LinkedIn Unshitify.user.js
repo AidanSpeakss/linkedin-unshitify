@@ -17,7 +17,7 @@ function unshitify(){
 let newStyles = document.createElement('style');
     //How-To: Simply comment out features you want or dont want with the // at the beginning of the line. Commenting them out turns them off. Removing the // turns them back on.
 
-    //Removes social counter from posts (likes, reactions, etc), this will also hide the comment section so you have to click comment if you want to make a comment or view comments
+    //Removes social counter from posts (likes, reactions, comment amount, etc), this also means you will have to click the comment button if you want to make a comment or view comments on posts where the comments aren't already visible
     newStyles.innerText += ".social-details-social-counts__item, .social-details-social-counts__item, .social-details-reactors-facepile, .social-details-reactors-facepile { display: none !important}"
 
     //Removes social counter from comments (likes, reactions, etc) while keep button to reply to comments
@@ -26,7 +26,7 @@ let newStyles = document.createElement('style');
     //Removes Feed Entirely - Can Break Things:
     //newStyles.innerText += ".feed-new-update-pill__new-update-button, .feed-right-rail, .feed-shared-update-v2, .nav-item__badge--doughnut, .feed-shared-news-module, .feed-follows-module { display: none !important; }"
 
-    //Removes Feed Entirely - Does Not Break As Many Things:
+    //Removed Feed Entirely - Does Not Break As Many Things:
     //newStyles.innerText += ".feed-shared-update-v2 { display: none !important; }"
 
     //Removes profile view stats
@@ -63,5 +63,4 @@ document.head.appendChild(newStyles);
 }
 
 unshitify();
-    // Your code here...
 })();
