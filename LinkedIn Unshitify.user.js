@@ -15,7 +15,7 @@
     'use strict';
 function unshitify(){
 let newStyles = document.createElement('style');
-    //How-To: Simply comment out features you want or dont want with the // at the beginning of the line. Commenting them out turns them off.
+    //How-To: Simply comment out features you want or dont want with the // at the beginning of the line. Commenting them out turns them off. Removing the // turns them back on.
 
     //Removes social counter from posts (likes, reactions, etc), this will also hide the comment section so you have to click comment if you want to make a comment or view comments
     newStyles.innerText += ".social-details-social-counts__item, .social-details-social-counts__item, .social-details-reactors-facepile { display: none !important}"
